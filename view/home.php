@@ -15,52 +15,13 @@ try {
   exit;
 }
 $me = $response->getGraphUser();
-?>
-<pre>
-<?php
-print_r($me);
-?>
-</pre>
-<?php
 $fullname = $me->getProperty('name');
 // echo "First Name: ".$me->getProperty('first_name')."<br>";
 // echo "Last Name: ".$me->getProperty('last_name')."<br>";
 // echo "Email: ".$me->getProperty('email')."<br>";
 // echo "gender: ".$me->getProperty('gender')."<br>";
 $profileurl =  $me['picture']['url'];
-
-
-?> <!-- <img src="<?php // print $profileurl; ?>" /> -->
-<?php
- // session_destroy();
-//header('location:index.php');
-?>
-
-
-<?php
-//print_r($me['albums']);
- $albums = $me['albums'];
-
-?>
-<pre>
-<?php
-//print_r($albums);
-?>
-</pre>
-<?php
-	
-foreach ($albums as $album) {
-			
-        		 $id =  $album['id'].'<br>';
-        		 $name =  $album['name'].'<br>';
-        		 $cover_photo =  $album['cover_photo']['source'];
-        	//	echo '<img src="'.$cover_photo.'">';
-        		
-        		foreach ($album['photos'] as $photo) {
-        			 $inpic =  $photo['source'];
-        			//echo '<img src="'.$inpic.'">';
-        		}
-}
+$albums = $me['albums'];
 ?>
 
 <header>
@@ -98,11 +59,9 @@ foreach ($albums as $album) {
 			        <div class="col-lg-3 col-sm-3 col-md-3">	
 
 			        	<div  class="thumbnail" style="height:300px;">
-
 			        		<a id="<?php echo $id; ?>" href="javascript:;"> 
 		      				<img src="<?php echo $cover_photo; ?>" alt="<?php echo $name; ?>" class="cover-photo" >	
 		      				</a>
-
 		      				<div class="caption">
 							<input type="checkbox" class="select-album pull-left"  title="select album" value="<?php echo $album['id'].','.$album['name'];?>" />
 							<?php $names = (strlen($name) > 25) ? substr($name,0,25).'...' : $name; ?>
@@ -112,7 +71,6 @@ foreach ($albums as $album) {
 						
 						</div>
 			        	</div>
-		    			 
 		      		</div>
 
 			      		<script type="text/javascript">
