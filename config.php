@@ -32,6 +32,7 @@ ob_start();
 
 require_once ASSETS_FOLD.'facebook-php-sdk/src/Facebook/autoload.php';
 require_once ASSETS_FOLD.'facebook-php-sdk/src/Facebook/facebook.php';
+require_once ASSETS_FOLD.'facebook-php-sdk/src/Facebook/Entities/AccessToken.php';
 
 $fb = new Facebook\Facebook([
   'app_id' => '282144482162248',

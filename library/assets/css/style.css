@@ -1,9 +1,34 @@
+body {
+  background-color: #f1f1f1;
+}
 
 header {
   background: red none repeat scroll 0 0;
   background-color: #f8f8f8;
   border-bottom: 2px solid #e7e7e7;
   min-height: 50px;
+}
+.btn-fb {
+    position: absolute;
+    top: 50%;
+    padding: 12px 16px;
+    font-size: 16px;
+    left: 43%;
+    letter-spacing: 1px;
+}
+.login-wrapper {
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  background: url('../images/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wrap-container.container {
+  background-color: white;
 }
  .user-name {
    	color: #777;
@@ -19,18 +44,128 @@ header {
 }
 .thumbnail .cover-photo{
   width:100%;
-  height:80%;
+  height:250px;
 }
-.album-name{
-    float:left;
-   margin-left:10px; 
-   color:#3B5998;
-   font-size: 15px;
+
+.album-name {
+  color: #34495e;
+  float: left;
+  font-size: 15px;
+  margin: 0 0 0 5px;
+   cursor: pointer;
 }
 .photo-count{
   clear: both;
   color: #90949c;
-  font-size: 13px;
+  font-size: 14px;
   padding-top: 6px;
-  padding-left: 2px;
 }
+
+.select-album {
+cursor: pointer;
+ padding-top: 1px;
+}
+.box {
+  background-color: #eff0f2;
+  border-bottom: 3px solid #e3e4e8;
+  border-radius: 6px;
+}
+.profile-pic{
+      border-radius: 5px;
+}
+
+.btn-custom {
+  background-color: #1abc9c;
+  background-image: none;
+  border: medium none;
+  color: #fff;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.btn-custom:active, .btn-custom:focus, .btn-custom:hover{
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+  color: #fff;
+}
+
+.btn-custom-light {
+  background-color: #323E4E;
+  background-image: none;
+  border: medium none;
+  color: #fff;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.btn-custom-light:active, .btn-custom-light:focus, .btn-custom-light:hover{
+  background-color: #707883;
+  border-color: #89DCB3;
+  color: #fff;
+}
+
+.module_holder > img {
+  width: 100%;
+}
+.errormsg {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 110px auto auto;
+  text-align: center;
+  width: 80%;
+    line-height: 34px;
+    letter-spacing: 1px;
+}
+.dropdown-menu {
+  left: -100px;
+}
+ 
+ .progressbar {
+  display: none;
+ }
+.progressbar > img {
+  width: 100%;
+}
+
+.progressbar-head{
+   display: none;
+ }
+
+.progressbar-head > img {
+    width: 100%;
+    height: 10px;
+}
+
+.download-zipalbum {
+  background-color: #CFD8E1;
+  background-image: none;
+  border: medium none;
+  color: black;
+  margin-top: 5px;
+  padding: 0px 10px;
+  border-radius: 30px;
+}
+.download-zipalbum:active, .download-zipalbum:focus, .download-zipalbum:hover{
+  background-color: #AEA7B1;
+  border-color: #AEA7B1;
+  color: #fff;
+}
+.row.head-btn {
+  border-bottom: 3px solid #eff0f2;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.head-btn .btn{
+  width: 100%;
+}
+#footer{
+   background-color: #F8F8F8;
+}
+.text-muted > a {
+  color: #34495e;
+  text-decoration: none;
+}
+.text-muted {
+  color: #777;
+  padding-top: 10px;
+}
+

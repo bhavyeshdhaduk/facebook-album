@@ -1,5 +1,10 @@
 
 
+<div id="footer">
+  <div class="container footer-copyright text-center">
+    <p class="text-muted">Develope by : <a href="https://github.com/bhavyeshdhaduk" target="_blanck" title="Bhavyesh Dhaduk">Bhavyesh Dhaduk</a></p>
+  </div>
+</div>
 
 <!-- Add mousewheel plugin (this is optional) -->
 	<script type="text/javascript" src="<?php echo FANCYBOX;?>lib/jquery.mousewheel.pack.js?v=3.1.3"></script>

@@ -1,4 +1,5 @@
 
+<div class="login-wrapper">
 <?php
 
 $helper = $fb->getRedirectLoginHelper();
@@ -44,3 +45,5 @@ $helper = $fb->getRedirectLoginHelper();
 		$loginUrl = $helper->getLoginUrl('http://localhost/facebook-album/', $permissions);
 		echo '<a class="btn btn-sm btn-primary btn-fb" href="' . $loginUrl . '">Log in with Facebook!</a>';
 	}
+	?>
+	</div>
