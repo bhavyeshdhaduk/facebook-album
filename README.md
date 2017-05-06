@@ -1,5 +1,4 @@
 ## facebook-album
-rtCamp Assignment for web developer
 
 Demo : [Facebook Album Assignment](http://sparklites.in/facebook-album/)
 
